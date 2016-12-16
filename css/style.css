@@ -1,0 +1,8 @@
+body{
+    margin-top: 50px;
+}
+.errorDisplay{
+    padding: 2px 0 2px 4px;
+    background: #990000;
+    color: #f3f3f3;
+}

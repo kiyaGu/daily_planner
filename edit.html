@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body onload="getTask();">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+     <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" arial-control="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        
+        <span class="text-primary"><strong>MENU</strong></span>
+      </button>
+      <a class="navbar-brand" href="#"><strong>Daily Planner</strong></a>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+         </div>
+    <div class="collapse navbar-collapse navbar-right" id="navbar">
+     
+      <ul class="nav navbar-nav">
+        
+        <li><a href="index.html">Home</a></li>
+        <li><a href="add.html">Add Entry</a></li>
+        
+    </ul>
+          </div>
+    </div>   
+</nav>
+ <div class="container">     
+    <h2 class="page-header">Add Task</h2>     
+    <form action="index.html" id="edit-task" class="form">
+  <div class="form-group">
+        <label for="task">Task</label>
+        <input type="text" class="form-control" placeholder="Input The Task" name="task" id="task">
+        <div id="taskError"></div>
+  </div>
+  <div class="form-group">
+    <label for="">Priority</label>
+    <select name="priority" id="priority" class="form-group form-control" name="priority">
+       <option value="x" selected>Priority</option>    
+        <option value="low">Low</option>
+        <option value="normal">Normal</option>
+        <option value="high">High</option>
+     </select> 
+     <div class="bg-primary" id="priorityError"></div>       
+    </div>
+    <div class="form-group">
+       <label for="date">Date</label>
+       <input type="Date" class="form-control" id="date" name="date">
+       <div class="bg-primary" id="dateError"></div>
+    </div>
+    <div class="form-group">
+       <label for="time">Time</label>
+       <input type="time" class="form-control" id="time" name="time">
+       <div class="bg-primary" id="timeError"></div>
+    </div>
+    <div class="form-group">
+    <input type="hidden" id="task_id" value="">
+    <button class="btn btn-danger" type="submit">Edit Task</button>
+    </div>   
+    </form>
+   
+ </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/main.js"></script>  
+</body>
+</html>
